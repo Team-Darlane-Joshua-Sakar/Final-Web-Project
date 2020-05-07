@@ -1,4 +1,11 @@
-html, body{
+ html, body{
   background-color:#E4E4E4; 
   font-family:'Manrope', sans-serif;
  }
+
+.main_container{
+    background-color:white;
+    margin:auto;
+    margin-top:100px;
+    width:750px;
+}
