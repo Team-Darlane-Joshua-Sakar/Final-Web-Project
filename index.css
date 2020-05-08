@@ -14,22 +14,47 @@ html, body{
     margin-top: 20px;
     text-align: center;
 }
+.larger{
+    font-size: 64px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    text-align: center;
+}
+.nav a{
+    font-size:15px;
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    text-transform:uppercase;
+    font-weight: 600;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+    
+
+.img{
+    text-align: center;
+}
 
 .card{
     background:white;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 .leftside{
     float:left;
-    width:50%;
+    width:49%;
 }
 
 .rightside{
     float:right;
-    width:50%; 
-    
+    width:49%; 
 }
 
 .endfloat:after{ 
@@ -38,9 +63,21 @@ html, body{
     clear:both;
 }
 
+
+
 .footer{
     background:white;
     padding: 10px;
     margin-top: 20px;
     text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+}
+/* This is so that when the window screen is more than 800px, the leftside and rightside will collapse on top together and fit better into the screen */
+@media screen and (max-width: 800px) {
+  .rightside,
+  .leftside {
+    width: 100%;
+      text-align: center;
+    }
 }
