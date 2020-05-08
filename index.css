@@ -3,8 +3,10 @@
 }
 
 html, body{
-      background-color:#E4E4E4; 
-      font-family:'Manrope', sans-serif;        
+    background-color:#E4E4E4; 
+    font-family:'Manrope', sans-serif;
+    margin-right:20px;
+    margin-left:20px;
  }
 
 .header{
@@ -35,6 +37,14 @@ html, body{
     text-decoration: underline;
 }
     
+.blockbutton{
+    border:none;
+    color:white;
+    background:#a5283b;
+    font-size: 16px;
+    padding:10px;
+    cursor:pointer;
+}
 
 .img{
     text-align: center;
@@ -42,19 +52,19 @@ html, body{
 
 .card{
     background:white;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 25px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
 .leftside{
     float:left;
-    width:49%;
+    width:50%;
 }
 
 .rightside{
     float:right;
-    width:49%; 
+    width:49.3%; 
 }
 
 .endfloat:after{ 
@@ -63,21 +73,18 @@ html, body{
     clear:both;
 }
 
-
-
 .footer{
     background:white;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-size: 15px;
     font-weight: 900;
 }
 /* This is so that when the window screen is more than 800px, the leftside and rightside will collapse on top together and fit better into the screen */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .rightside,
   .leftside {
     width: 100%;
       text-align: center;
     }
-}
