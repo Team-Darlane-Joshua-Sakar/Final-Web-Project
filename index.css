@@ -3,7 +3,7 @@
 }
 
 html, body{
-    background-color:#E4E4E4; 
+    background-color:#E4E4E4;
     font-family:'Manrope', sans-serif;
     margin-right:20px;
     margin-left:20px;
@@ -36,7 +36,7 @@ html, body{
 .nav a:hover{
     text-decoration: underline;
 }
-    
+
 .blockbutton{
     border:none;
     color:white;
@@ -64,10 +64,10 @@ html, body{
 
 .rightside{
     float:right;
-    width:49.3%; 
+    width:49.3%;
 }
 
-.endfloat:after{ 
+.endfloat:after{
     content: "";
     display: table;
     clear:both;
@@ -81,10 +81,24 @@ html, body{
     font-size: 15px;
     font-weight: 900;
 }
-/* This is so that when the window screen is more than 800px, the leftside and rightside will collapse on top together and fit better into the screen */
+/* This is so that when the window screen is more than 800px, 
+the leftside and rightside will collapse on top together and fit better into the screen */
 @media screen and (max-width: 850px) {
   .rightside,
   .leftside {
     width: 100%;
       text-align: center;
     }
+}
+/* When the window is bigger than 1250px, the header, 
+cards and footer will be a fixed size and not expand anymore than 65% of 1250px */
+@media screen and (min-width: 1250px) {
+    .header, 
+    .footer,
+    .fit_to_size{
+        width: 65%;
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
