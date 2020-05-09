@@ -16,7 +16,17 @@ html, body{
     margin-left: auto;
     margin-right: auto;
 }
-
+header
+{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
+}
 .header{
     background:white;
     padding: 20px;
@@ -38,9 +48,11 @@ h2{
 }
 
 .nav {
+    float: right;
     text-align: center;
 }
 .nav a{
+    display:block;
     font-size:15px;
     padding:10px;
     text-decoration: none;
@@ -49,9 +61,25 @@ h2{
     font-weight: 600;
 }
 .nav a:hover{
-    text-decoration: underline;
+    background: #a5283b;
+	color: #fffff;
+	text-decoration: underline;
+	transition: 0.5s;
 }
-
+.nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.nav li
+{
+	list-style: none;
+}
+.clearfix
+{
+	clear: both;
+}
 .blockbutton{
     border:none;
     color:white;
