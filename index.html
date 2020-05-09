@@ -23,6 +23,7 @@
 <div class="endfloat">
     <div class="fit_to_size">
 <!--LEFT SIDE-->
+    <!--CARD 1-->
     <div class="leftside">
        <div class="card">
            <div class="img">
@@ -32,21 +33,21 @@
            <hr>
           <p><span style="font-size:20px;font-weight: 600">Yes?</span> Suspendisse eu pretium elit. Duis feugiat nibh sit amet leo sagittis lobortis. 
               Curabitur posuere felis vel faucibus iaculis. <span id="moreless"></span></p>
-            <p id="expand">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue.</p>
-           <br>
-           <button onclick="button_expand()" id="blockbutton">Learn More</button>
+            <p id="expand">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue.<br><br></p>
+           <button onclick="button_expand()" class="blockbutton">Learn More</button>
       </div>
-
+    <!--CARD 2-->
         <div class="card">
             <h2>WHERE? IT code fair</h2>
             <hr>
             <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci 
-                sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.</p>
+            sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.</p>
             <p id="expand2"></p>
             <button onclick="button_expand2()" class="blockbutton">Learn More</button>
         </div>
     </div>
 <!--RIGHT SIDE-->
+    <!--CARD 3-->
     <div class="rightside">
         <div class="card">
           <h2>WHY? IT CODE FAIR</h2>
@@ -60,6 +61,7 @@
             <p id="expand3"></p>
             <button onclick="button_expand3()" class="blockbutton">Learn More</button>
       </div>
+        <!--CARD 4-->
         <div class="card">
           <h2>This is card no4</h2>
             <hr>
@@ -76,11 +78,12 @@
         <p>Darlane Tang</p>
       </div>
 <!--JAVASCRIPTS-->
+      <!--Will allow user to Show More and Show Less information-->
       <script>
         function button_expand(){
             var moreless = document.getElementById("moreless");
             var text = document.getElementById("expand");
-            var button = document.getElementById("blockbutton")
+            var button = document.getElementsByClassName("blockbutton")[0]
             
           if (moreless.style.display=="none"){
                 moreless.style.display = "inline";
