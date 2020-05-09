@@ -27,7 +27,7 @@ html, body{
 h2{
     font-size: 26px;
 }
-.larger{
+.header_text{
     font-size: 64px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -60,11 +60,13 @@ h2{
     padding:10px;
     cursor:pointer;
 }
-
+.cdu_img{
+    width:650px;
+    margin-top: 10px;
+}
 .img{
     text-align: center;
 }
-
 .card{
     background:white;
     padding: 25px;
@@ -103,6 +105,9 @@ the leftside and rightside will collapse on top together and fit better into the
   .leftside {
       width: 100%;
       text-align: center;
+    }
+    .cdu_img{
+        width:350px;
     }
 }
 /* When the window is bigger than 1250px, the header, 
