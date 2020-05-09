@@ -1,25 +1,28 @@
+<!--By Darlane S314609-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--import Manrope font-->
+<!--To import Manrope font-->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Charles Darwin University: IT Code Fair</title>
   </head>
   <body>
+<!--HEADER-->
       <div class="header">
         <img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni">
         <h1 class="header_text">2020 IT CODE FAIR</h1>
           <div class="nav">
-            <a class="button" href="#">button</a>
-            <a class="button" href="#">button</a>
-            <a class="button" href="#">button</a>
+            <a class="button" href="about.html">about</a>
+            <a class="button" href="about.html">button</a>
+            <a class="button" href="about.html">button</a>
           </div>
     </div>
 
 <div class="endfloat">
     <div class="fit_to_size">
+<!--LEFT SIDE-->
     <div class="leftside">
        <div class="card">
            <div class="img">
@@ -28,19 +31,22 @@
           <h2>Do you want to be an IT student?</h2>
            <hr>
           <p><span style="font-size:20px;font-weight: 600">Yes?</span> Suspendisse eu pretium elit. Duis feugiat nibh sit amet leo sagittis lobortis. 
-              Curabitur posuere felis vel faucibus iaculis.</p>
-           <button class="blockbutton">Learn More</button>
+              Curabitur posuere felis vel faucibus iaculis. <span id="moreless"></span></p>
+            <p id="expand">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue.</p>
+           <br>
+           <button onclick="button_expand()" id="blockbutton">Learn More</button>
       </div>
 
         <div class="card">
             <h2>WHERE? IT code fair</h2>
             <hr>
-            <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor       orci 
+            <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci 
                 sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.</p>
-            <button class="blockbutton">Learn More</button>
-      </div>
+            <p id="expand2"></p>
+            <button onclick="button_expand2()" class="blockbutton">Learn More</button>
+        </div>
     </div>
-
+<!--RIGHT SIDE-->
     <div class="rightside">
         <div class="card">
           <h2>WHY? IT CODE FAIR</h2>
@@ -51,21 +57,52 @@
               iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc 
               auctor commodo ante, sed interdum diam volutpat non. Donec 
               bibendum velit vel pretium porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            <button class="blockbutton">Learn More</button>
+            <p id="expand3"></p>
+            <button onclick="button_expand3()" class="blockbutton">Learn More</button>
       </div>
         <div class="card">
           <h2>This is card no4</h2>
             <hr>
           <p>Suspendisse vel vehicula tortor, eu imperdiet nulla. Aenean ac massa porttitor, auctor 
               eros ac, mollis dui. Morbi a dapibus ipsum, id consectetur ligula. Proin in malesuada nisi.</p>
-            <button class="blockbutton">Learn More</button>
+            <p id="expand4"></p>
+            <button onclick="button_expand4()" class="blockbutton">Learn More</button>
         </div>
         </div>
     </div>
 </div>
-
+<!--FOOTER-->
       <div class="footer">
-        <p>Darlane Tang, Joshua Jape, Sakar Strestha</p>
+        <p>Darlane Tang</p>
       </div>
+<!--JAVASCRIPTS-->
+      <script>
+        function button_expand(){
+            var moreless = document.getElementById("moreless");
+            var text = document.getElementById("expand");
+            var button = document.getElementById("blockbutton")
+            
+          if (moreless.style.display=="none"){
+                moreless.style.display = "inline";
+                text.style.display = "none";
+                button.innerHTML = "Learn More"
+          }
+            else{
+                moreless.style.display = "none";
+                text.style.display = "inline";
+                button.innerHTML = "Show Less"
+            }
+          }
+        
+        function button_expand2(){
+          document.getElementById("expand2").innerHTML = "tetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat undrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e"
+        }
+        function button_expand3(){
+          document.getElementById("expand3").innerHTML = "orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e"
+        }
+        function button_expand4(){
+          document.getElementById("expand4").innerHTML = "massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere"
+        }
+      </script>
   </body>
 </html>
