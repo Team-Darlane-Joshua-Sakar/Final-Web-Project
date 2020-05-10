@@ -16,17 +16,6 @@ html, body{
     margin-left: auto;
     margin-right: auto;
 }
-header
-{
-	position: relative;
-	max-width: 1200px;
-	margin: 20px auto;
-	padding: 10px;
-	background: #fff;
-	box-sizing: border-box;
-	border-radius: 4px;
-	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
-}
 .header{
     background:white;
     padding: 20px;
@@ -47,9 +36,18 @@ h2{
     font-size: 32px;
 }
 
+.navbar{
+    margin-bottom:15px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
+}
+
 .nav {
-    float: right;
     text-align: center;
+    margin: auto;
+    width:45%;
 }
 .nav a{
     display:block;
@@ -62,7 +60,7 @@ h2{
 }
 .nav a:hover{
     background: #a5283b;
-	color: #fffff;
+	color: #ffffff;
 	text-decoration: underline;
 	transition: 0.5s;
 }

@@ -14,17 +14,17 @@
         <img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni">
         <h1 class="header_text">2020 IT CODE FAIR</h1>
           <div class="nav">
-             <header>
-			        <ul>
-              <li><a class="button" href="about.html">about</a></li>
-              <li><a class="button" href="about.html">challanges</a></li>
-              <li><a class="button" href="about.html">events</a></li>
-			        <li><a class="button" href="about.html">business</a></li>
-			        <li><a class="button" href="about.html">sign in/up</a></li>
-			        </ul>
-		      </div>
-		       <div class="clearfix"></div>
-		      </header>
+             <div class="navbar">
+                 <ul>
+                     <li><a class="button" href="about.html">about</a></li>
+                     <li><a class="button" href="about.html">challanges</a></li>
+                     <li><a class="button" href="about.html">events</a></li>
+                     <li><a class="button" href="about.html">business</a></li>
+                     <li><a class="button" href="about.html">sign in/up</a></li>
+                 </ul>
+              </div>
+          </div>
+          <div class="clearfix"></div>
     </div>
 
 
@@ -39,7 +39,7 @@
             </div>
           <h2>Do you want to be an IT student?</h2>
            <hr>
-          <p><span style="font-size:20px;font-weight: 600">Yes?</span> Suspendisse eu pretium elit. Duis feugiat nibh sit amet leo sagittis lobortis. 
+          <p><span style="font-size:20px;font-weight: 600">Yes?</span> Suspendisse eu pretium elit. Duis feugiat nibh sit amet leo sagittis lobortis.
               Curabitur posuere felis vel faucibus iaculis. <span id="moreless"></span></p>
             <p id="expand">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue.<br><br></p>
            <button onclick="button_expand()" class="blockbutton">Learn More</button>
@@ -48,7 +48,7 @@
         <div class="card">
             <h2>WHERE? IT code fair</h2>
             <hr>
-            <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci 
+            <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci
             sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.</p>
             <p id="expand2"></p>
             <button onclick="button_expand2()" class="blockbutton">Learn More</button>
@@ -60,11 +60,11 @@
         <div class="card">
           <h2>WHY? IT CODE FAIR</h2>
             <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo ante, vulputate 
-              eu massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in, 
-              faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam 
-              iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc 
-              auctor commodo ante, sed interdum diam volutpat non. Donec 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo ante, vulputate
+              eu massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in,
+              faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam
+              iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
+              auctor commodo ante, sed interdum diam volutpat non. Donec
               bibendum velit vel pretium porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             <p id="expand3"></p>
             <button onclick="button_expand3()" class="blockbutton">Learn More</button>
@@ -73,7 +73,7 @@
         <div class="card">
           <h2>What is IT Code Fair?</h2>
             <hr>
-          <p>Code Fair is a yearly event hosted by Charles Darwin University, where students are able to share their IT skills of all experiences, to interact and create digital problem solving programs to help others while connecting students 
+          <p>Code Fair is a yearly event hosted by Charles Darwin University, where students are able to share their IT skills of all experiences, to interact and create digital problem solving programs to help others while connecting students
 				  with professions in the IT industry.</p>
             <p id="expand4"></p>
             <button onclick="button_expand4()" class="blockbutton">Learn More</button>
@@ -92,7 +92,7 @@
             var moreless = document.getElementById("moreless");
             var text = document.getElementById("expand");
             var button = document.getElementsByClassName("blockbutton")[0]
-            
+
           if (moreless.style.display=="none"){
                 moreless.style.display = "inline";
                 text.style.display = "none";
@@ -104,7 +104,7 @@
                 button.innerHTML = "Show Less"
             }
           }
-        
+
         function button_expand2(){
           document.getElementById("expand2").innerHTML = "tetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat undrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e"
         }
