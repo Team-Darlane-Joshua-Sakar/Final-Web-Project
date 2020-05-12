@@ -12,12 +12,12 @@
 <!--HEADER-->
       <div class="header">
         <div id="navbar-scrolldown">
-            <a class="button" href="about.html">About</a>
-            <a class="button" href="about.html">Challanges</a>
-            <a class="button" href="about.html">Events</a>
-            <a class="button" href="about.html">Business</a>
-            <a class="button" href="about.html">Sign in/up</a>
-      </div>
+                <a class="button" href="about.html">About</a>
+                <a class="button" href="about.html">Challanges</a>
+                <a class="button" href="about.html">Events</a>
+                <a class="button" href="about.html">Business</a>
+                <a class="button" href="about.html">Sign in/up</a>
+        </div>
 
     <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
         <h1 class="header_text">2020 IT CODE FAIR</h1>
@@ -41,21 +41,6 @@
     <div class="clearfix"></div>
     </div>
 
-
-
-    <script>
-      // The slide down navbar will appear when the user scrolls down 30px
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-          document.getElementById("navbar-scrolldown").style.top = "0";
-        } else {
-          document.getElementById("navbar-scrolldown").style.top = "-60px";
-        }
-      }
-      </script>
-
 <div class="endfloat">
     <div class="fit_to_size">
 <!--LEFT SIDE-->
@@ -69,7 +54,7 @@
            <hr>
           <p><span style="font-size:20px;font-weight: 600">Yes?</span> Then this event will showcase to you the innovation, fun, and
 		  teamwork to complete challanges and gain experience of the possibilities of a career in IT. <span id="moreless"></span></p>
-            <p id="expand">IT Code Fair is the perfect place for IT students to show off their skills to others or to learn more from others to always be improving on their skills.<br><br></p>
+            <p id="expand" style="display:none">IT Code Fair is the perfect place for IT students to show off their skills to others or to learn more from others to always be improving on their skills.<br><br></p>
            <button onclick="button_expand()" class="blockbutton">Learn More</button>
       </div>
 
@@ -83,6 +68,7 @@
         </div>
     </div>
 <!--RIGHT SIDE-->
+        
     <!--CARD 3-->
     <div class="rightside">
         <div class="card">
@@ -112,8 +98,20 @@
 
 
 <!--JAVASCRIPTS-->
-	<!--Will create mini nav slider when screen width is equal or lower than 850px-->
-	  <script>
+    <script>
+      // The slide down navbar will appear when the user scrolls down 30px
+      window.onscroll = function() {scrollFunction()};
+        
+      function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          document.getElementById("navbar-scrolldown").style.top = "0";
+        } else {
+          document.getElementById("navbar-scrolldown").style.top = "-60px";
+        }
+      }
+     
+      
+	//Will create mini nav slider when screen width is equal or lower than 850px
 	const navSlide = () => {
 		const burger = document.querySelector('.burger');
 		const nav = document.querySelector('.links');
@@ -123,11 +121,13 @@
 			nav.classList.toggle('nav-active');
 		});
 	}
-
 	navSlide();
-	</script>
-      <!--Will allow user to Show More and Show Less information-->
-      <script>
+          
+          
+          
+	
+      //Will allow user to Show More and Show Less information
+      
         function button_expand(){
             var moreless = document.getElementById("moreless");
             var text = document.getElementById("expand");
