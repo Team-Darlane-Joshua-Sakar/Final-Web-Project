@@ -74,6 +74,17 @@ h2{
 {
 	list-style: none;
 }
+.burger
+{
+	display: none;
+}
+.burger div
+{
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin: 5px;
+}
 .clearfix
 {
 	clear: both;
@@ -139,6 +150,31 @@ h2{
 /* This is so that when the window screen is more than 800px, 
 the leftside and rightside will collapse on top together and fit better into the screen */
 @media screen and (max-width: 850px) {
+body{
+overflow-x: hidden;
+}
+.links
+{
+position: absolute;
+right: 35vh;
+height: 50vh;
+bottom: 5.5vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+transform: translateX(1000px);
+transition: transform 0.5s ease-in;
+}
+.burger
+{
+display: block;	
+cursor: pointer;
+}
+.nav-active, .links li
+{
+transform: translateX(0%);	
+}
   .rightside,
   .leftside {
       width: 100%;
