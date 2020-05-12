@@ -11,7 +11,15 @@
   <body>
 <!--HEADER-->
       <div class="header">
-         <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
+        <div id="navbar-scrolldown">
+            <a class="button" href="about.html">About</a>
+            <a class="button" href="about.html">Challanges</a>
+            <a class="button" href="about.html">Events</a>
+            <a class="button" href="about.html">Business</a>
+            <a class="button" href="about.html">Sign in/up</a>
+      </div>
+          
+    <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
         <h1 class="header_text">2020 IT CODE FAIR</h1>
           <div class="nav">
              <div class="navbar">
@@ -22,23 +30,18 @@
                      <li><a class="button" href="about.html">business</a></li>
                      <li><a class="button" href="about.html">sign in/up</a></li>
                  </ul>
-		<div class="burger">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-		</div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
               </div>
-          </div>
-          <div class="clearfix"></div>
+        </div>
+          
+    <div class="clearfix"></div>      
     </div>
 	  
-     <div id="navbar-scrolldown">
-       <a class="button" href="about.html">About</a></li>
-        <a class="button" href="about.html">Challanges</a>
-        <a class="button" href="about.html">Events</a>
-        <a class="button" href="about.html">Business</a>
-        <a class="button" href="about.html">Sign in/up</a>
-      </div>
+     
     
     <script>
       // The slide down navbar will appear when the user scrolls down 30px
@@ -66,17 +69,19 @@
            <hr>
           <p><span style="font-size:20px;font-weight: 600">Yes?</span> Suspendisse eu pretium elit. Duis feugiat nibh sit amet leo sagittis lobortis.
               Curabitur posuere felis vel faucibus iaculis. <span id="moreless"></span></p>
+           
             <p id="expand">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue.<br><br></p>
            <button onclick="button_expand()" class="blockbutton">Learn More</button>
       </div>
+        
     <!--CARD 2-->
         <div class="card">
             <h2>WHERE? IT code fair</h2>
             <hr>
             <p><span style="font-size:20px; font-weight: 600">Charles Darwin Univeristy.</span> Vivamus quis orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci
-            sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.</p>
-            <p id="expand2"></p>
-            <button onclick="button_expand2()" class="blockbutton">Learn More</button>
+                sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis.<span id="moreless2"></span></p>
+            <p id="expand2" style="display:none">tetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat undrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e<br><br></p>
+            <button onclick="button_expand2()" class="blockbutton" name="blockbutton2">Learn More</button>
         </div>
     </div>
 <!--RIGHT SIDE-->
@@ -88,20 +93,20 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum justo ante, vulputate
               eu massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in,
               faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam
-              iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc
-              auctor commodo ante, sed interdum diam volutpat non. Donec
-              bibendum velit vel pretium porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            <p id="expand3"></p>
-            <button onclick="button_expand3()" class="blockbutton">Learn More</button>
+              iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc auctor commodo ante, sed interdum diam volutpat non. Donec
+              bibendum velit vel pretium porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus.<span id="moreless3"></span></p>
+            
+            <p id="expand3" style="display:none">orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e<br><br></p>
+            <button onclick="button_expand3()" class="blockbutton" name="blockbutton3">Learn More</button>
       </div>
+        
         <!--CARD 4-->
         <div class="card">
           <h2>What is IT Code Fair?</h2>
             <hr>
-          <p>Code Fair is a yearly event hosted by Charles Darwin University, where students are able to share their IT skills of all experiences, to interact and create digital problem solving programs to help others while connecting students
-				  with professions in the IT industry.</p>
-            <p id="expand4"></p>
-            <button onclick="button_expand4()" class="blockbutton">Learn More</button>
+          <p>Code Fair is a yearly event hosted by Charles Darwin University, where students are able to share their IT skills of all experiences, to interact and create digital problem solving programs to help others while connecting students professions in the IT industry.<span id="moreless4"></span></p>
+            <p id="expand4" style="display:none">massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere<br><br></p>
+            <button onclick="button_expand4()" class="blockbutton" name="blockbutton4">Learn More</button>
         </div>
         </div>
     </div>
@@ -110,6 +115,8 @@
       <div class="footer">
         <p>Darlane Tang, Joshua Jape, Sakar Shrestha</p>
       </div>
+      
+      
 <!--JAVASCRIPTS-->
 	<!--Will create mini nav slider when screen width is equal or lower than 850px--> 
 	  <script>
@@ -145,13 +152,54 @@
           }
 
         function button_expand2(){
-          document.getElementById("expand2").innerHTML = "tetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat undrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e"
+            var moreless2 = document.getElementById("moreless2");
+            var text2 = document.getElementById("expand2");
+            var button2 = document.getElementsByName("blockbutton2")[0]
+
+          if (moreless2.style.display=="none"){
+                moreless2.style.display = "inline";
+                text2.style.display = "none";
+                button2.innerHTML = "Learn More"
+          }
+            else{
+                moreless2.style.display = "none";
+                text2.style.display = "inline";
+                button2.innerHTML = "Show Less"
+            }
         }
+          
         function button_expand3(){
-          document.getElementById("expand3").innerHTML = "orci vitae massa rhoncus fringilla. Nullam pharetra arcu tempor orci sollicitudin, eu dapibus lorem congue. Duis at ultrices mi. Nam vehicula hendrerit magna id lobortis. massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id e"
+            var moreless3 = document.getElementById("moreless3");
+            var text3 = document.getElementById("expand3");
+            var button3 = document.getElementsByName("blockbutton3")[0]
+
+          if (moreless3.style.display=="none"){
+                moreless3.style.display = "inline";
+                text3.style.display = "none";
+                button3.innerHTML = "Learn More"
+          }
+            else{
+                moreless3.style.display = "none";
+                text3.style.display = "inline";
+                button3.innerHTML = "Show Less"
+            }
         }
+          
         function button_expand4(){
-          document.getElementById("expand4").innerHTML = "massa ac, vulputate consectetur nunc. Etiam dolor lorem, vestibulum id euismod in, faucibus at magna. Suspendisse vel dapibus elit. Donec consequat ultricies commodo. Aliquam iaculis nisi nisi. Donec tristique porta augue, ac lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere"
+            var moreless4 = document.getElementById("moreless4");
+            var text4 = document.getElementById("expand4");
+            var button4 = document.getElementsByName("blockbutton4")[0]
+
+          if (moreless4.style.display=="none"){
+                moreless4.style.display = "inline";
+                text4.style.display = "none";
+                button4.innerHTML = "Learn More"
+          }
+            else{
+                moreless4.style.display = "none";
+                text4.style.display = "inline";
+                button4.innerHTML = "Show Less"
+            }
         }
       </script>
   </body>
