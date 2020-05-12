@@ -74,6 +74,30 @@ h2{
 {
 	list-style: none;
 }
+#navbar-scrolldown {
+    background-color: #ffffff;
+    position: fixed;
+    top: -60px;
+    display: block;
+    width: 58%;
+    left: 400px;
+    transition: top 0.3s;
+  }
+  
+#navbar-scrolldown a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+#navbar-scrolldown a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
 .burger
 {
 	display: none;
