@@ -8,7 +8,7 @@ html, body{
     margin-right:20px;
     margin-left:20px; }
 
-.fit_to_size, 
+.fit_to_size,
 .header,
 .footer{
     max-width: 800px;
@@ -35,20 +35,21 @@ h2{
     font-size: 32px;
 }
 
+.nav {
+    text-align: center;
+    margin: auto;
+    width:70%;
+}
 .navbar{
     margin-bottom:15px;
 	padding: 10px;
 	background: #fff;
 	border-radius: 4px;
-	box-shadow: 0 2px 5px rgba(0,0,0,.2);	
-}
-
-.nav {
-    text-align: center;
-    margin: auto;
-    width:45%;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
 }
 .nav a{
+    margin-left: 10px;
+    text-align: center;
     display:block;
     font-size:15px;
     padding:10px;
@@ -82,7 +83,7 @@ h2{
     transition: top 0.3s;
         }
 
-  
+
 #navbar-scrolldown a {
     float: left;
     display: block;
@@ -92,7 +93,7 @@ h2{
     padding: 16px;
     text-decoration: none;
   }
-  
+
 #navbar-scrolldown a:hover {
     background-color: #ffffff;
     color: #000000;
@@ -167,24 +168,24 @@ h2{
     font-size: 15px;
     font-weight: 900;
 }
-/* This is so that when the window screen is less than 850px, 
+/* This is so that when the window screen is less than 850px,
 the leftside and rightside will collapse on top together and fit better into the screen */
 @media screen and (max-width: 850px) {
     body{
         overflow-x: hidden;
     }
-    .links{  
+    .links{
         display: flex;
         flex-direction: column;
         width: 100%;
         transition: transform 0.5s ease-in;
     }
     .burger{
-        display: block;	
+        display: block;
         cursor: pointer;
     }
     .nav-active, .links li{
-        transform: translateX(0%);	
+        transform: translateX(0%);
     }
 
     .nav, .navbar{
@@ -203,10 +204,10 @@ the leftside and rightside will collapse on top together and fit better into the
         display: none;
     }
 }
-/* When the window is bigger than 1250px, the header, 
+/* When the window is bigger than 1250px, the header,
 cards and footer will be a fixed size and not expand anymore than 65% of 1250px */
 @media screen and (min-width: 1250px) {
-    .header, 
+    .header,
     .footer,
     .fit_to_size{
         max-width: 1100px;
@@ -226,6 +227,9 @@ cards and footer will be a fixed size and not expand anymore than 65% of 1250px 
         max-width: 1100px;
     }
     
+    .nav a{
+        margin-left: 45px;
+    }
 }
 
 #expand{
