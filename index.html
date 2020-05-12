@@ -31,7 +31,27 @@
           </div>
           <div class="clearfix"></div>
     </div>
-
+	  
+     <div id="navbar-scrolldown">
+       <a class="button" href="about.html">About</a></li>
+        <a class="button" href="about.html">Challanges</a>
+        <a class="button" href="about.html">Events</a>
+        <a class="button" href="about.html">Business</a>
+        <a class="button" href="about.html">Sign in/up</a>
+      </div>
+    
+    <script>
+      // The slide down navbar will appear when the user scrolls down 30px
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          document.getElementById("navbar-scrolldown").style.top = "0";
+        } else {
+          document.getElementById("navbar-scrolldown").style.top = "-60px";
+        }
+      }
+      </script>
 
 <div class="endfloat">
     <div class="fit_to_size">
