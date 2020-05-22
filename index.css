@@ -233,4 +233,64 @@ cards and footer will be a fixed size and not expand anymore than 65% of 1250px 
     
 }
 
+/*About page content*/
 
+.content{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height:500px;
+    background-color: white;
+    margin-top: 10px;
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.pgheader{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #a5283b;
+    color: white;
+    border-style: solid;
+    border-color: #211545;
+    padding-left: 30px;
+}
+
+.contentbody{
+    min-height: 400px;
+    margin-bottom: 10px;
+    padding: 25px;
+    line-height: 1.95;
+}
+
+.abtimg{
+    float:right;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.abtimg2{
+    float:left;
+    margin:10px;
+    height: 212px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.programme{
+    background-color:#a5283b;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+}
+
+.programme li{
+    list-style-type: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 3;
+}
