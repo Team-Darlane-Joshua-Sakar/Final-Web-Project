@@ -13,10 +13,10 @@
       <div class="header">
         <div id="navbar-scrolldown">
                 <a class="button" href="about.html">About</a>
-                <a class="button" href="about.html">Challanges</a>
-                <a class="button" href="about.html">Events</a>
-                <a class="button" href="about.html">Business</a>
-                <a class="button" href="about.html">Sign in/up</a>
+                <a class="button" href="challenges.html">Challanges</a>
+                <a class="button" href="events.html">Events</a>
+                <a class="button" href="sponsors.html">Sponsors</a>
+                <a class="button" href="signinup.html">Sign in/up</a>
         </div>
 
     <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
@@ -68,7 +68,7 @@
         </div>
     </div>
 <!--RIGHT SIDE-->
-        
+
     <!--CARD 3-->
     <div class="rightside">
         <div class="card">
@@ -101,7 +101,7 @@
     <script>
       // The slide down navbar will appear when the user scrolls down 30px
       window.onscroll = function() {scrollFunction()};
-        
+
       function scrollFunction() {
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
           document.getElementById("navbar-scrolldown").style.top = "0";
@@ -109,8 +109,8 @@
           document.getElementById("navbar-scrolldown").style.top = "-60px";
         }
       }
-     
-      
+
+
 	//Will create mini nav slider when screen width is equal or lower than 850px
 	const navSlide = () => {
 		const burger = document.querySelector('.burger');
@@ -122,12 +122,12 @@
 		});
 	}
 	navSlide();
-          
-          
-          
-	
+
+
+
+
       //Will allow user to Show More and Show Less information
-      
+
         function button_expand(){
             var moreless = document.getElementById("moreless");
             var text = document.getElementById("expand");
