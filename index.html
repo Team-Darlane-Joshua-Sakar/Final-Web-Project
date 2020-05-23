@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+ <!--To resize for mobiles-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--To import Manrope font-->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -9,39 +10,36 @@
     <title>Charles Darwin University: IT Code Fair</title>
   </head>
   <body>
-<!--HEADER-->
+<!--HEADER CONTAINER-->
       <div class="header">
+          <!--A navigation bar will show up when the user scrolls down-->
         <div id="navbar-scrolldown">
+                <a class="button" href="index.html">Home</a>
                 <a class="button" href="about.html">About</a>
                 <a class="button" href="challenges.html">Challanges</a>
                 <a class="button" href="events.html">Events</a>
                 <a class="button" href="sponsors.html">Sponsors</a>
                 <a class="button" href="signinup.html">Sign in/up</a>
-        </div>
-
+              </div>
+          <!--HEADER-->
     <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
         <h1 class="header_text">2020 IT CODE FAIR</h1>
           <div class="nav">
-             <div class="navbar">
                  <ul class="links">
+                     <li><a class="button" href="index.html">home</a></li>
                      <li><a class="button" href="about.html">about</a></li>
-                     <li><a class="button" href="about.html">challanges</a></li>
-                     <li><a class="button" href="about.html">events</a></li>
-                     <li><a class="button" href="about.html">business</a></li>
-                     <li><a class="button" href="about.html">sign in/up</a></li>
+                     <li><a class="button" href="challenges.html">challanges</a></li>
+                     <li><a class="button" href="events.html">events</a></li>
+                     <li><a class="button" href="sponsors.html">business</a></li>
+                     <li><a class="button" href="signinup.html">sign in/up</a></li>
                  </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-              </div>
-        </div>
-
+            </div>
+        <!--To clear all floats-->
     <div class="clearfix"></div>
     </div>
 
 <div class="endfloat">
+    <!--So that everything inside stays the same size even when resizing the webspage-->
     <div class="fit_to_size">
 <!--LEFT SIDE-->
     <!--CARD 1-->
@@ -63,7 +61,7 @@
             <h2>WHERE is the IT code fair</h2>
             <hr>
             <p><a href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Hotel+Esplanade+Darwin/@-12.460869,130.83608,17z/data=!4m8!3m7!1s0x0:0xe11c74243a0643b9!5m2!4m1!1i2!8m2!3d-12.4608688!4d130.8360804?hl=en-US">DoubleTree By Hilton Hotel</a> Esplanade Darwin (116 Esplanade, Darwin City)<br>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7791.673933340956!2d130.836611!3d-12.460576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc091a74a4880b1%3A0x7773332d17552350!2s116%20Esplanade%2C%20Darwin%20City%20NT%200800!5e0!3m2!1sen!2sau!4v1590130217745!5m2!1sen!2sau" width="400" height="300"
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7791.673933340956!2d130.836611!3d-12.460576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc091a74a4880b1%3A0x7773332d17552350!2s116%20Esplanade%2C%20Darwin%20City%20NT%200800!5e0!3m2!1sen!2sau!4v1590130217745!5m2!1sen!2sau" width="350"  height="250"
               frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><span id="moreless2"></span></p>
             <p id="expand2" style="display:none">IT Code fair offically starts at 9 November, 10 A.M Darwin time.<br><br></p>
             <button onclick="button_expand2()" class="blockbutton" name="blockbutton2">Learn More</button>
@@ -112,7 +110,6 @@
         }
       }
 
-
 	//Will create mini nav slider when screen width is equal or lower than 850px
 	const navSlide = () => {
 		const burger = document.querySelector('.burger');
@@ -125,11 +122,7 @@
 	}
 	navSlide();
 
-
-
-
-      //Will allow user to Show More and Show Less information
-
+      //Will allow user to Show More and Show Less information FOR ALL 4 BUTTONS//
         function button_expand(){
             var moreless = document.getElementById("moreless");
             var text = document.getElementById("expand");
