@@ -18,12 +18,14 @@ html, body{
     margin-left: auto;
     margin-right: auto;
 }
+
 .header{
     background:white;
     padding: 20px;
     font-size: 20px;
     margin-top: 20px;
     text-align: center;
+    
 }
 
 h2{
@@ -158,12 +160,17 @@ li {list-style: none;}
 }
 
 .footer{
-    background:white;
-    padding: 10px;
+    background:#003968;
+    color:white;
+    padding: 15px;
     margin-top: 10px;
     text-align: center;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 100;
+}
+
+.footer p{
+    font-size: 20px;
 }
 
 /*ABOUT PAGE content*/
@@ -230,11 +237,11 @@ li {list-style: none;}
 }
 .learnmore a{
     text-decoration: none;
-    color:#211545;
+    color:#003968;
 }
 .learnmore a:hover{
     text-decoration: underline;
-    color:#a5283b;
+    color:#7693ab;
 }
 
 /*SHOULD BE AT THE BOTTOM OF CSS*/
