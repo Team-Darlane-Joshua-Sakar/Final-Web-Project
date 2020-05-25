@@ -1,3 +1,7 @@
+/*
+#056571
+#211545
+*/
 *{
     box-sizing: border-box;
 }
@@ -6,11 +10,9 @@ html, body{
     background-color:#E4E4E4;
     font-family:'Manrope', sans-serif;
     margin-right:20px;
-    margin-left:20px; }
-/*
-#056571
-#211545
-*/
+    margin-left:20px;
+  }
+
 .fit_to_size,
 .header,
 .footer{
@@ -25,7 +27,6 @@ html, body{
     font-size: 20px;
     margin-top: 20px;
     text-align: center;
-    
 }
 
 h2{
@@ -36,12 +37,12 @@ h2{
     font-size: 64px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: 
+    background:
 }
 
-.lrg_text{
-    font-size: 32px;
-}
+.lrg_text{font-size: 32px;}
+li {list-style: none;}
+
 /*For navigation bar, a and hover and ul*/
 .nav {
     text-align: center;
@@ -76,8 +77,6 @@ h2{
 	padding: 0;
 	display: flex;
 }
-
-li {list-style: none;}
 /*For navigation when scrolling down*/
 #navbar-scrolldown {
     background-color: #a5283b;
@@ -85,8 +84,8 @@ li {list-style: none;}
     top: -60px;
     width:1100px;
     transition: top 0.3s;
-    }
 
+    }
 #navbar-scrolldown a {
     float: left;
     display: block;
@@ -98,7 +97,6 @@ li {list-style: none;}
     margin-left:10px;
     margin-right:10px;
   }
-
 #navbar-scrolldown a:hover {
     background-color: #ffffff;
     color: #000000;
@@ -107,6 +105,7 @@ li {list-style: none;}
 .clearfix{
 	clear: both;
 }
+
 .blockbutton{
     border:none;
     color:white;
@@ -141,12 +140,12 @@ li {list-style: none;}
     border-radius: 5px;
     line-height: 2;
 }
-
+/*For if cards should be on the left side of page*/
 .leftside{
     float:left;
     width:50%;
 }
-
+/*For if cards should be on the right side of page*/
 .rightside{
     float:right;
     width:49.3%;
@@ -167,13 +166,12 @@ li {list-style: none;}
     font-size: 15px;
     font-weight: 100;
 }
-
 .footer p{
     font-size: 20px;
 }
 
-/*ABOUT PAGE content*/
-.content{
+/*For ABOUT PAGE content*/
+.content-container{
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -183,17 +181,16 @@ li {list-style: none;}
     border-radius: 5px;
 }
 
-.abtheader{
+.subheader{
     font-size: 40px;
     font-weight: bold;
     text-align: left;
     background-color: #a5283b;
     color: white;
-    
     padding-left: 30px;
 }
 
-.contentbody{
+.content-body{
     min-height: 400px;
     margin-bottom: 10px;
     padding: 25px;
@@ -211,7 +208,6 @@ li {list-style: none;}
     width: 330px;
     margin-right: 20px;
     margin-bottom: 0px;
-
 }
 
 .programme{
@@ -220,7 +216,6 @@ li {list-style: none;}
     text-align: center;
     width: 500px;
 }
-
 .programme li{
     list-style-type: none;
     font-weight: bold;
@@ -242,6 +237,16 @@ li {list-style: none;}
     text-decoration: underline;
     color:#7693ab;
 }
+/*For CHALLENGES Page*/
+.chall-img1{width:33.3%;display: block;}
+.chall-img2{width:33.3%;display:block;}
+.row-container{background:#0e7380;width:100%;margin:20px;}
+.row-container: after {content: "";display: table;clear: both}
+.left-row-text{padding:20px;float:left;width:66.6%;}
+.left-row-text h2, .left-row-text p{margin:0; line-height: 1.4}
+.right-row-text h2, .right-row-text p {margin:0;  line-height: 1.4}
+.right-row-text{padding:20px;float:right;width:66.6%;}
+
 
 /*SHOULD BE AT THE BOTTOM OF CSS*/
 /* This is so that when the window screen is less than 850px,
@@ -259,20 +264,26 @@ the leftside and rightside will collapse on top together and fit better into the
     .nav{
         width:100%;
         min-width: 0px;
-        }
+    }
     .rightside,
     .leftside {
           width: 100%;
           text-align: center;
-        }
+    }
     .cdu_img{
             width:350px;
-        }
+    }
+    .footer p{
+      font-size:16px;
+    }
     #navbar-scrolldown {
         display: none;
     }
     .programme{
-        width:100px;
+        width:300px;
     }
+    .programme li{
+      text-align: left;
+    }
+    .map{width:100%}
 }
-
