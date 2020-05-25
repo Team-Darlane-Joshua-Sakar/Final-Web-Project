@@ -9,7 +9,58 @@
 </head>
 
 <body>
-    <span style="text-align: center;margin:auto"><h1>This Page is Currently in Progress</h1>
-    <a href="index.html"><p>Home</p></a></span>
+    <div class="header">
+<!--NAV BAR SCROLLDOWN-->
+        <div id="navbar-scrolldown">
+                <a class="button" href="index.html">Home</a>
+                <a class="button" href="about.html">About</a>
+                <a class="button" href="challenges.html">Challanges</a>
+                <a class="button" href="events.html">Events</a>
+                <a class="button" href="sponsors.html">Sponsors</a>
+                <a class="button" href="signinup.html">Sign in/up</a>
+        </div>
+        
+    <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
+        <h1 class="header_text">2020 IT CODE FAIR</h1>
+          <div class="nav">
+                 <ul class="links">
+                     <li><a class="button" href="index.html">home</a></li>
+                     <li><a class="button" href="about.html">about</a></li>
+                     <li><a class="button" href="challenges.html">challanges</a></li>
+                     <li><a class="button" href="events.html">events</a></li>
+                     <li><a class="button" href="sponsors.html">Sponsors</a></li>
+                     <li><a class="button" href="signinup.html">sign in/up</a></li>
+                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        </div>
+    </div>
+<!--ABOUT CONTENT-->
+    <div class="content">
+       <div class="abtheader">Challenges</div>
+        <div class="contentbody">
+
+        </div>
+    </div>
+<!--FOOTER-->
+<div class="footer">
+        <p>Darlane Tang, Joshua Jape, Sakar Shrestha</p>
+      </div>
+<!--ALL SCRIPTS-->
+        <script>
+      // The slide down navbar will appear when the user scrolls down 30px
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          document.getElementById("navbar-scrolldown").style.top = "0";
+        } else {
+          document.getElementById("navbar-scrolldown").style.top = "-60px";
+        }
+      }
+    </script>
 </body>
 </html>
