@@ -1,15 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--import Manrope font-->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>About</title>
-</head>
+<html lang="en">
 
+<head>
+  <!--To resize for mobiles-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--To import Manrope font-->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="signinup.css">
+  <title>Sign-in Sign-up Form</title>
+</head>
 <body>
-    <span style="text-align: center;margin:auto"><h1>This Page is Currently in Progress</h1>
-    <a href="index.html"><p>Home</p></a></span>
+    <!--HEADER-->
+	<div class="header">
+	<a href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
+        <h1 class="header_text">2020 IT CODE FAIR</h1>
+          <div class="nav">
+                 <ul class="links">
+                     <li><a href="index.html">home</a></li>
+                     <li><a href="about.html">about</a></li>
+                     <li><a href="challenges.html">challanges</a></li>
+                     <li><a href="events.html">events</a></li>
+                     <li><a href="sponsors.html">business</a></li>
+                     <li><a href="signinup.html">sign in/up</a></li>
+                 </ul>
+            </div>
+        </div>
+        <!--To clear all floats-->
+    <div class="clearfix"></div>
+	<div class="endfloat">
+    <!--So that everything inside stays the same size even when resizing the webspage-->
+    <div class="fit_to_size">
+	
+	<div class ="container">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+			<form id="signup" class="input-group">
+				<input type="text" class="input-field" placeholder="User ID" required>
+				<input type="email" class="input-field" placeholder="Email ID" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions </span>
+				<button type="submit" class="submit-btn">Sign Up</button>
+			</form>
+		</div>
+	</div>
+	
+<!--FOOTER-->
+    <div class="footer">
+		<p>Darlane Tang, Joshua Jape, Sakar Shrestha</p>
+    </div>
+	  
+	<!--JAVASCRIPTS-->
+	<script>
+	var x = document.getElementById("login");
+	var y = document.getElementById("signup");
+	var z = document.getElementById("btn");
+	
+	function signup(){
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+	function login(){
+		x.style.left = "50px";
+		y.style.left = "450px";
+		z.style.left = "0";
+	}
+	</script>
+
 </body>
+
 </html>
