@@ -178,14 +178,13 @@ li {list-style: none;}
 .content-body{min-height: 400px;margin-bottom: 10px;padding: 25px;line-height: 2;}
 .abtimg{float:right; margin: 10px;width:300px;}
 .abtimg2{float:left;width: 330px;margin-right: 20px;margin-bottom: 0px;}
-.programme{height:auto;float:right;padding:10px;}
+.programme{height:auto;width:300px;background:#04606b;float:right;padding:10px}
 .programme ul{margin:0;padding:0}
-.programme li{list-style-type: none;font-weight: bold;color: white;text-align: left;line-height: 3;}
+.programme li{list-style-type: none;font-weight: bold;color: white;text-align: left;line-height: 2;}
 .learnmore{text-align: center;font-size: 20px;margin:0;}
 .learnmore a{text-decoration: none; color:#003968;}
 .learnmore a:hover{text-decoration: underline; color:#7693ab}
 /*For CHALLENGES Page*/
-/*Kept css compact*/
 .chall-img1{width:33.3%;display: block;}
 .chall-img2{width:33.3%;display:block;}
 .row-container{background:#04606b;width:100%;margin-top:20px; overflow: hidden}
@@ -197,18 +196,9 @@ li {list-style: none;}
 .right-row-text p {margin:0 0 10px 0;  line-height: 1.4; color:white}
 .right-row-text{padding:20px;float:right;width:66.6%;}
 /*For Events Page*/
-/*Kept css compact*/
-.eve-img1{width:33.3%;display: block;}
-.eve-img2{width:33.3%;display:block;}
-.eve-img3{width:33.3%;display:block;}
-.row-container{background:#04606b;width:100%;margin-top:20px; overflow: hidden}
-.row-container: after {content: "";display: table;clear: both}
-.left-row-text{padding:20px;float:left;width:66.6%;min-width: 50%}
-.left-row-text h2, 
-.right-row-text h2 {margin:0 0 5px 0; line-height: 1.4; color:white}
-.left-row-text p, 
-.right-row-text p {margin:0 0 10px 0;  line-height: 1.4; color:white}
-.right-row-text{padding:20px;float:right;width:66.6%;}
+.eve-img1,
+.eve-img2,
+.eve-img3{width:33.3%; display: block;}
 
 /*SHOULD BE AT THE BOTTOM OF CSS*/
 /* This is so that when the window screen is less than 850px,
@@ -241,20 +231,9 @@ the leftside and rightside will collapse on top together and fit better into the
     #navbar-scrolldown {
         display: none;
     }
-    .programme{
-        width:300px;
-    }
-    .programme li{
-      text-align: left;
-    }
     .map,
     .chall-img1,
     .chall-img2{width:100%}
-	
-    .map,
-    .eve-img1,
-    .eve-img2,
-    .eve-img3{width:100%}
 
     .left-row-text,
     .right-row-text{
@@ -262,4 +241,7 @@ the leftside and rightside will collapse on top together and fit better into the
     }
     .programme{display:none}
     .abtimg, .abtimg2{width:100%; margin:0}
+    .eve-img1,
+    .eve-img2,
+    .eve-img3{width:100%}
 }
