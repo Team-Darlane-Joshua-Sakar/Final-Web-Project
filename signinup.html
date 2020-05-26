@@ -12,6 +12,16 @@
 <body>
     <!--HEADER-->
 	<div class="header">
+    <!--NAVIGATION SCROLLBAR-->
+    <div id="navbar-scrolldown">
+            <a class="button" href="index.html">Home</a>
+            <a class="button" href="about.html">About</a>
+            <a class="button" href="challenges.html">Challanges</a>
+            <a class="button" href="events.html">Events</a>
+            <a class="button" href="sponsors.html">Sponsors</a>
+            <a class="button" href="signinup.html">Sign in/up</a>
+      </div>
+
 	<a href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
         <h1 class="header_text">2020 IT CODE FAIR</h1>
           <div class="nav">
@@ -61,6 +71,17 @@
 
 	<!--JAVASCRIPTS-->
 	<script>
+  // The slide down navbar will appear when the user scrolls down 30px
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      document.getElementById("navbar-scrolldown").style.top = "0";
+    } else {
+      document.getElementById("navbar-scrolldown").style.top = "-60px";
+    }
+  }
+
 	var x = document.getElementById("login");
 	var y = document.getElementById("signup");
 	var z = document.getElementById("btn");

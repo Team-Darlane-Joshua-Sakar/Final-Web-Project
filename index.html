@@ -126,18 +126,6 @@
         }
       }
 
-	//Will create mini nav slider when screen width is equal or lower than 850px
-	const navSlide = () => {
-		const burger = document.querySelector('.burger');
-		const nav = document.querySelector('.links');
-		const navLinks = document.querySelectorAll('.links li');
-
-		burger.addEventListener('click',() => {
-			nav.classList.toggle('nav-active');
-		});
-	}
-	navSlide();
-
       //Will allow user to Show More and Show Less information FOR ALL 4 BUTTONS//
         function button_expand(){
             var moreless = document.getElementById("moreless");

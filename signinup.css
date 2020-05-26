@@ -1,13 +1,13 @@
 *{  box-sizing: border-box;
 }
-	
-    
+
+
 html, body{
     background-color:#E4E4E4;
 	font-family:'Manrope', sans-serif;
 	box-sizing: border-box;
 }
-    
+
 .fit_to_size,
 .header,
 .footer{
@@ -26,7 +26,7 @@ html, body{
     font-size: 64px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: 
+    background:
 }
 .nav {
     text-align: center;
@@ -75,6 +75,32 @@ li {
 .img{
     text-align: center;
 }
+
+/*For navigation when scrolling down*/
+#navbar-scrolldown {
+    background-color: #a5283b;
+    position:fixed;
+    top: -60px;
+    width:1100px;
+    transition: top 0.3s;
+
+    }
+#navbar-scrolldown a {
+    float: left;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    text-decoration: none;
+    margin-left:10px;
+    margin-right:10px;
+  }
+#navbar-scrolldown a:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
 .endfloat:after{
     content: "";
     display: table;
@@ -82,9 +108,9 @@ li {
 }
 .container{
 	max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
 	background-color: white;
 	background-position: center;
 	background-size: cover;
@@ -168,12 +194,16 @@ span{
 	left: 450px;
 }
 .footer{
-    background:white;
-    padding: 10px;
+    background:#003968;
+    color:white;
+    padding: 15px;
     margin-top: 10px;
     text-align: center;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 100;
+}
+.footer p{
+    font-size: 20px;
 }
 /*SHOULD BE AT THE BOTTOM OF CSS*/
 /* This is so that when the window screen is less than 850px,
@@ -195,6 +225,3 @@ the leftside and rightside will collapse on top together and fit better into the
 	.cdu_img{
         width:350px;
        }
-
-
-
