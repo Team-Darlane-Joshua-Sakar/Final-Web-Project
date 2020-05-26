@@ -1,3 +1,4 @@
+<!--Page done by Sakar Shrestha-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,11 +6,75 @@
     <!--import Manrope font-->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>About</title>
+    <title>Events</title>
 </head>
 
 <body>
-    <span style="text-align: center;margin:auto"><h1>This Page is Currently in Progress</h1>
-    <a href="index.html"><p>Home</p></a></span>
+    <div class="header">
+<!--NAV BAR SCROLLDOWN-->
+        <div id="navbar-scrolldown">
+                <a class="button" href="index.html">Home</a>
+                <a class="button" href="about.html">About</a>
+                <a class="button" href="challenges.html">Challanges</a>
+                <a class="button" href="events.html">Events</a>
+                <a class="button" href="sponsors.html">Sponsors</a>
+                <a class="button" href="signinup.html">Sign in/up</a>
+        </div>
+
+    <a class="button" href="index.html"><img src="images/cdu.jpg" class="cdu_img" alt="charles_darwin_uni"></a>
+        <h1 class="header_text">2020 IT CODE FAIR</h1>
+          <div class="nav">
+                 <ul class="links">
+                     <li><a class="button" href="index.html">home</a></li>
+                     <li><a class="button" href="about.html">about</a></li>
+                     <li><a class="button" href="challenges.html">challanges</a></li>
+                     <li><a class="button" href="events.html">events</a></li>
+                     <li><a class="button" href="sponsors.html">Sponsors</a></li>
+                     <li><a class="button" href="signinup.html">sign in/up</a></li>
+                 </ul>
+            </div>
+    </div>
+<!--EVENT CONTENT-->
+    <div class="content-container">
+       <div class="subheader">Events</div>
+        <div class="content-body">
+            <h1>SPECIAL THANKS TO OUR KIND SPONSORS</h1>
+            <h2>Platinum Sponsers</h2>
+            <a href="https://nt.gov.au/">
+            <img border="0" alt="NT" src="images/nt.png" width="300" height="200"></a>
+            <a href="https://itcodefair.cdu.edu.au/www.intersystems.com">
+            <img border="0" alt="Inter" src="images/inter.png" width="300" height="150"></a>
+            <br>
+            <h2>Gold Sponsers</h2>
+            <a href="https://www.ibm.com/au-en">
+            <img border="0" alt="NT" src="images/ibm.jpg" width="300" height="200"></a>
+            <br>
+            <h2>Silver Sponsers</h2>
+            <a href="https://www.kineticit.com.au/">
+            <img border="0" alt="NT" src="images/kinetic.png" width="300" height="200"></a>
+            <br>
+            <h2>Bronze Sponsers</h2>
+            <a href="https://www.radicalsystems.com.au/">
+            <img border="0" alt="NT" src="images/radical.png" width="300" height="200"></a>
+        </div>
+    </div>
+
+<!--FOOTER-->
+<div class="footer">
+        <p>Darlane Tang, Joshua Jape, Sakar Shrestha</p>
+      </div>
+<!--ALL SCRIPTS-->
+        <script>
+      // The slide down navbar will appear when the user scrolls down 30px
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          document.getElementById("navbar-scrolldown").style.top = "0";
+        } else {
+          document.getElementById("navbar-scrolldown").style.top = "-60px";
+        }
+      }
+    </script>
 </body>
 </html>
